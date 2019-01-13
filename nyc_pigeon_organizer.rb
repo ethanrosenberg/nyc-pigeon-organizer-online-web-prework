@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
   data[:color].each do |key, value|
     value.each do |att, attvalue|
         if !mydata.has_key?(att)
-          mydata[att] = {}
+          mydata[att] = {:color => {}, :gender => {}, :lives => {}}
         end
     end
   end
@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
   data[:gender].each do |key, value|
     value.each do |att, attvalue|
         if !mydata.has_key?(att)
-          mydata[att] = {}
+          mydata[att] = {:color => {}, :gender => {}, :lives => {}}
         end
     end
   end
@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
   data[:lives].each do |key, value|
     value.each do |att, attvalue|
         if !mydata.has_key?(att)
-          mydata[att] = {}
+          mydata[att] = {:color => {}, :gender => {}, :lives => {}}
         end
     end
   end
