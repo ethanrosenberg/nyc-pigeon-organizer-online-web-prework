@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   
-  pigeon_data[:color].each do |key, value|
+  data[:color].each do |key, value|
     value.each do |att, attvalue|
         if !mydata.has_key?(att)
           mydata[att] = {}
@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
     end
   end
 
-  pigeon_data[:gender].each do |key, value|
+  data[:gender].each do |key, value|
     value.each do |att, attvalue|
         if !mydata.has_key?(att)
           mydata[att] = {}
@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
     end
   end
 
-  pigeon_data[:lives].each do |key, value|
+  data[:lives].each do |key, value|
     value.each do |att, attvalue|
         if !mydata.has_key?(att)
           mydata[att] = {}
