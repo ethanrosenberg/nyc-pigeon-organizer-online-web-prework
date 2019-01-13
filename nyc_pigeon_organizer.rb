@@ -1,6 +1,8 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   
+  mydata = {}
+  
   data[:color].each do |key, value|
     value.each do |att, attvalue|
         if !mydata.has_key?(att)
@@ -24,5 +26,7 @@ def nyc_pigeon_organizer(data)
         end
     end
   end
+  
+  return mydata
   
 end
